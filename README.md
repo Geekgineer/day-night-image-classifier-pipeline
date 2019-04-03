@@ -10,7 +10,7 @@ We'd like to build a classifier that can accurately label these images as day or
 
 ![buddha](https://user-images.githubusercontent.com/16764177/55517982-95bd9180-5672-11e9-9297-38a1ceefd650.jpg)
 
-![image](https://user-images.githubusercontent.com/16764177/55518616-fea60900-5674-11e9-9cb5-b2cf90c9b641.png)
+![55518616-fea60900-5674-11e9-9cb5-b2cf90c9b641](https://user-images.githubusercontent.com/16764177/55518871-f26e7b80-5675-11e9-8a6f-1490d4a8692b.png)
 
 ## Prerequisites
 
