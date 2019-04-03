@@ -1,0 +1,24 @@
+name: dn-classifier
+channels:
+    - https://conda.anaconda.org/menpo
+    - conda-forge
+dependencies:
+    - python==3.5.2
+    - numpy
+    - matplotlib
+    - pillow
+    - scipy
+    - h5py
+    - eventlet
+    - flask-socketio
+    - seaborn
+    - pandas
+    - ffmpeg
+    - imageio=2.1.2
+    - pyqt=4.11.4
+    - pip:
+        - moviepy
+        - opencv-python
+        - requests
+        
+

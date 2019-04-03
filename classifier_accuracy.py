@@ -1,8 +1,10 @@
 import random
+import helpers
+import day_night_image_classifier as dnc
 
 # Using the load_dataset function in helpers.py
 # Load test data
-TEST_IMAGE_LIST = helpers.load_dataset(image_dir_test)
+TEST_IMAGE_LIST = helpers.load_dataset(dnc.image_dir_test)
 
 # Standardize the test data
 STANDARDIZED_TEST_LIST = helpers.standardize(TEST_IMAGE_LIST)
@@ -25,7 +27,7 @@ def get_misclassified_images(test_images):
         true_label = image[1]
 
         # Get predicted label from your classifier
-        predicted_label = day_night_image_classifier.estimate_label(im)
+        predicted_label = dnc.estimate_label(im)
 
         # Compare true and predicted labels 
         if(predicted_label != true_label):
@@ -51,7 +53,7 @@ print("Number of misclassified images = " + str(len(MISCLASSIFIED)) +' out of '+
 #Display an image in the `MISCLASSIFIED` list 
 num = 0
 test_mis_im = MISCLASSIFIED[num][0]
-plt.imshow(test_mis_im)
+dnc.plt.imshow(test_mis_im)
 
 #Print out its predicted label - to see what the image *was* incorrectly classified
 print(str(MISCLASSIFIED[num][1]))

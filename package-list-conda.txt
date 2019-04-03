@@ -1,5 +1,5 @@
 # This file may be used to create an environment using:
-# $ conda create --name <env> --file pak
+# $ conda create --name dn-classifier --file package-list-conda.txt
 # platform: linux-64
 attrs=19.1.0=pypi_0
 backcall=0.1.0=pypi_0

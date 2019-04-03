@@ -1,11 +1,9 @@
 import cv2 # computer vision library
 import helpers
-
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
-%matplotlib inline
 
 # Image data directories
 image_dir_training = "day_night_images/training/"
@@ -26,9 +24,9 @@ selected_image = STANDARDIZED_LIST[image_num][0]
 selected_label = STANDARDIZED_LIST[image_num][1]
 
 # Display image and data about it
-plt.imshow(selected_image)
-print("Shape: "+str(selected_image.shape))
-print("Label [1 = day, 0 = night]: " + str(selected_label))
+# plt.imshow(selected_image)
+# print("Shape: "+str(selected_image.shape))
+# print("Label [1 = day, 0 = night]: " + str(selected_label))
 
 # Find the average Value or brightness of an image
 def avg_brightness(rgb_image):
@@ -72,7 +70,11 @@ def estimate_label(rgb_image):
     if(avg > threshold):
         # if the average brightness is above the threshold value, we classify it as "day"
         predicted_label = 1
+        if (predicted_label == 1):
+             my_decision = "day" 
+    else:
+            my_decision = "night"
     # else, the pred-cted_label can stay 0 (it is predicted to be "night")
     
-    return predicted_label    
+    return my_decision    
 
