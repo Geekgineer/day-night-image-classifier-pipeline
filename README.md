@@ -6,6 +6,8 @@ The day/night image dataset consists of 200 RGB color images in two categories: 
 
 We'd like to build a classifier that can accurately label these images as day or night, and that relies on finding distinguishing **features** between the two types of images!
 
+![image](https://user-images.githubusercontent.com/16764177/55559739-2639b780-56ef-11e9-90a7-dfe7e280c827.png)
+
 *Note: All images come from the [AMOS dataset](http://cs.uky.edu/~jacobs/datasets/amos/) (Archive of Many Outdoor Scenes). and the project based on the work of Udacity CVND*
 
 ![buddha](https://user-images.githubusercontent.com/16764177/55517982-95bd9180-5672-11e9-9297-38a1ceefd650.jpg)
